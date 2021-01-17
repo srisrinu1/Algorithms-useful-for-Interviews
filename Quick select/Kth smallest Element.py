@@ -1,5 +1,7 @@
 from random import randint
 def QuickSelect(left,right,K):
+    lef
+def partition(lst,left,right):    
 def main():
     lst=[]
     for _ in range(10):
