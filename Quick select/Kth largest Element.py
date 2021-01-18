@@ -12,7 +12,7 @@ def partition(lst,left,right):
     pivot=lst[right]
     i=left
     for j in range(left,right):
-        if(lst[j]<pivot):
+        if(lst[j]>pivot):
             lst[j],lst[i]=lst[i],lst[j]
             i+=1
     lst[right],lst[i]=lst[i],lst[right]
@@ -21,7 +21,6 @@ def main():
     lst=[]
     for _ in range(10):
         lst.append(randint(1,100))
-    #lst=list(map(int,input().split()))    
     K=int(input())    
     print(Quickselect(lst,0,len(lst)-1,K))    
 main()        
